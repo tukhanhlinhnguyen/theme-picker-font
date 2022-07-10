@@ -1,0 +1,61 @@
+.mat-card-image {
+    margin : 0
+}
+
+.mat-card-actions {
+    display: flex;
+}
+
+.button-demo {
+    width: 50%;
+    margin: auto !important
+}
+
+.mat-card-title {
+    color: black;
+    font-size: 30px;
+}
+
+.button-scroll-top {
+    position: fixed;
+    float: right;
+    cursor: pointer;
+    right: 14px;
+    bottom: 14px;
+    z-index: 100;
+    opacity: 0.7;
+}
+
+// .color-pick-section {
+//     display: flex;
+//     align-content: center;
+//     align-items: center;
+// }
+
+.check-box-color {
+    margin: 0 10px;
+}
+
+.mat-card {
+    background: #D3D3D3;
+    margin: 0 0 20px 0;
+}
+
+.container {
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.demo-photo {
+    margin: auto;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        width: 100%;
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        width: 100%;
+    }
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 1024px) {
+        width: 50%;
+    }
+}
