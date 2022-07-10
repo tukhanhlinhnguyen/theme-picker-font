@@ -2,11 +2,10 @@
   <mat-expansion-panel [(expanded)]="panelOpenState">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Couleur
+        <h4>Sélectionnez vos couleurs :</h4>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <section class="color-pick-section" [formGroup]="color">
-      <h4>Select your colors:</h4>
       <p><mat-checkbox class="check-box-color" formControlName="black">Noir</mat-checkbox></p>
       <p><mat-checkbox class="check-box-color" formControlName="white">Blanc</mat-checkbox></p>
       <p><mat-checkbox class="check-box-color" formControlName="brown">Brun</mat-checkbox></p>
@@ -20,7 +19,8 @@
       <p><mat-checkbox class="check-box-color" formControlName="purple">Violet</mat-checkbox></p>
     </section>
     <button mat-raised-button color="primary" (click)="filter()" style="margin-right: 20px;">Filtre</button>
-    <button mat-raised-button color="primary" (click)="showAll()">Affiche tout</button>
+    <button mat-raised-button color="primary" (click)="showAll()" style="margin-right: 20px;">Tout voir</button>
+    <button mat-raised-button color="primary" (click)="clear()">Effacer</button>
   </mat-expansion-panel>
   <br>
   <div class="card-wrapper" *ngFor="let t of theme">

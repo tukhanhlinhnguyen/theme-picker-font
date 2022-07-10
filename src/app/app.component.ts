@@ -61,6 +61,19 @@ export class AppComponent {
   }
 
   showAll(){
+    this.color = this._formBuilder.group({
+      black: true,
+      white: true,
+      brown: true,
+      grey: true,
+      red: true,
+      orange: true,
+      green: true,
+      blue: true,
+      pink: true,
+      yellow: true,
+      purple: true
+    });
     this._http.get(environment.apiUrl+'/color')
     .subscribe(
       {
@@ -76,5 +89,22 @@ export class AppComponent {
 
   scrollToTop(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  clear(){
+    this.color = this._formBuilder.group({
+      black: false,
+      white: false,
+      brown: false,
+      grey: false,
+      red: false,
+      orange: false,
+      green: false,
+      blue: false,
+      pink: false,
+      yellow: false,
+      purple: false
+    });
+    this.theme = [];
   }
 }
