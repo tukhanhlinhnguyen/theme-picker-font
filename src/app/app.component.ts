@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { Theme } from './model/theme.model';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 
 @Component({
@@ -15,10 +15,10 @@ export class AppComponent {
   title = 'theme-picker-front';
   panelOpenState = true;
   theme : Theme[] = [];
-  color : FormGroup;
+  color : UntypedFormGroup;
 
   constructor(
-    private _http: HttpClient, private _formBuilder: FormBuilder) { }
+    private _http: HttpClient, private _formBuilder: UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.panelOpenState = false;

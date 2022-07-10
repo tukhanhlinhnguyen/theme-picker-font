@@ -109,5 +109,7 @@
       }
     }
   },
-  "defaultProject": "theme-picker-front"
+  "cli": {
+    "analytics": false
+  }
 }
